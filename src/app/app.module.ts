@@ -1,3 +1,5 @@
+import { InputTextModule, ButtonModule } from 'primeng/primeng';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent } from './heroes.component';
@@ -21,6 +23,10 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,    // <-- import the FormsModule before binding with [(ngModel)]
     AppRoutingModule,
+
+    BrowserAnimationsModule,
+    InputTextModule,
+    ButtonModule,
   ],
   providers: [
     HeroService,

@@ -14,4 +14,14 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     console.log("AppComponent ngOnInit()")
   }
+
+  name: string;
+  
+  message: string;
+  
+  onClick() {
+  
+    this.message = "Hello , " + this.name;
+  
+  }
 }

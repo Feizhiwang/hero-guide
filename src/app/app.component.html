@@ -1,7 +1,11 @@
 <h1>{{title}}</h1>
+<input type="text" [(ngModel)]="name" pInputText>
+
+<button type="button" pButton label="Click" icon="fa fa-check" (click)="onClick($event)"></button>
+
+<div>{{message}}</div>
 <nav>
   <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
   <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
 </nav>
 <router-outlet></router-outlet>
-
